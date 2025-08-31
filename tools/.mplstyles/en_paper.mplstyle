@@ -1,0 +1,69 @@
+# sci_paper.mplstyle - Matplotlib样式文件用于SCI论文插图
+
+# 字体设置 (使用Arial或Times New Roman)
+font.family: sans-serif    # 使用无衬线字体(Arial等效)
+font.sans-serif: Arial, sans-serif  # 备选字体列表
+font.serif: Times New Roman, Times, serif  # 衬线字体(Times New Roman等效)
+font.size: 10              # 基础字号7-12pt之间，推荐10pt
+font.weight: bold          # 全局字体加粗
+
+# 数学表达式字体
+mathtext.fontset: dejavusans  # 数学表达式使用与正文相同的字体
+
+# 线条设置
+lines.linewidth: 1.0        # 线条粗细0.5-1.5pt之间，推荐1.0pt
+lines.markersize: 6         # 标记点大小
+
+# 坐标轴设置
+axes.linewidth: 1.0         # 坐标轴线宽1.0pt
+axes.edgecolor: black       # 坐标轴颜色为黑色
+axes.labelcolor: black      # 坐标轴标签颜色
+axes.titlesize: 10          # 坐标轴标题字号
+axes.titleweight: bold      # 坐标轴标题加粗
+axes.labelsize: 10          # 坐标轴标签字号
+axes.labelweight: bold      # 坐标轴标签加粗
+axes.formatter.use_mathtext: True  # 使用数学文本格式器
+
+
+# 刻度设置
+xtick.direction: out        # 刻度线朝外
+ytick.direction: out
+xtick.color: black          # 刻度线颜色
+ytick.color: black
+xtick.labelsize: 9          # 刻度标签字号略小于轴标签
+ytick.labelsize: 9
+xtick.major.size: 3.5       # 主刻度长度
+ytick.major.size: 3.5
+xtick.major.width: 1.0      # 主刻度线宽
+ytick.major.width: 1.0
+xtick.minor.size: 2.0       # 次刻度长度
+ytick.minor.size: 2.0
+xtick.minor.width: 0.8      # 次刻度线宽
+ytick.minor.width: 0.8
+
+# 图例设置
+legend.fontsize: 9          # 图例字号
+legend.frameon: False       # 无图例框(根据期刊要求可调整)
+legend.handlelength: 1.5    # 图例句柄长度
+
+# 图形尺寸设置 (半版图8cm ≈ 3.15英寸)
+figure.figsize: 3.15, 2.36  # 宽度8cm(3.15英寸)，高度6cm(2.36英寸)
+figure.dpi: 600             # 导出时分辨率设置为600dpi(但实际使用中应在保存时指定)
+
+# 颜色设置 (使用RGB模式，适用于电子期刊)
+axes.prop_cycle: "cycler('color', ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'])"
+#axes.prop_cycle: cycler('color', ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'])
+
+# 图形元素设置
+errorbar.capsize: 3         # 误差线帽长度
+
+# 保存设置 (推荐在代码中明确指定)
+savefig.bbox: tight         # 保存时使用紧凑边界框
+savefig.pad_inches: 0.05    # 边界填充0.05英寸
+savefig.format: tiff        # 默认保存为TIFF格式(可根据需要改为eps/pdf)
+savefig.dpi: 600            # 保存分辨率600dpi
+
+# 其他设置
+patch.linewidth: 1.0        # 图形补丁(如条形图)线宽
+scatter.marker: o           # 散点图默认标记
+grid.linewidth: 0.8         # 网格线宽
